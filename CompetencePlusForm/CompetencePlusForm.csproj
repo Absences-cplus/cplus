@@ -52,6 +52,18 @@
     <Compile Include="MenuApplication.designer.cs">
       <DependentUpon>MenuApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="PackageAbsences\formabsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageAbsences\formabsence.Designer.cs">
+      <DependentUpon>formabsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageAbsences\formgestionabsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageAbsences\formgestionabsence.Designer.cs">
+      <DependentUpon>formgestionabsence.cs</DependentUpon>
+    </Compile>
     <Compile Include="PackageAnneeFormations\Class2.cs" />
     <Compile Include="PackageDB\FormGestionDB.cs">
       <SubType>Form</SubType>
@@ -141,6 +153,12 @@
     <EmbeddedResource Include="MenuApplication.resx">
       <DependentUpon>MenuApplication.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PackageAbsences\formabsence.resx">
+      <DependentUpon>formabsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageAbsences\formgestionabsence.resx">
+      <DependentUpon>formgestionabsence.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PackageDB\FormGestionDB.resx">
       <DependentUpon>FormGestionDB.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,9 +205,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\CompetencePlus.PackageAbsences.Absence.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageDB.IncrementationDB.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageFilieres.Filiere.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageGroupes.Groupe.datasource" />
+    <None Include="Properties\DataSources\CompetencePlus.PackageSeances.Seance.datasource" />
+    <None Include="Properties\DataSources\CompetencePlus.PackageStagiaires.Stagiaire.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageStagiaires.StagiaireBAO.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -235,9 +256,7 @@
   <ItemGroup>
     <None Include="Resources\Profile.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PackageAbsences\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

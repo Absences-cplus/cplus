@@ -130,6 +130,7 @@
             // 
             this.absencesDesStagiairesToolStripMenuItem1.Name = "absencesDesStagiairesToolStripMenuItem1";
             resources.ApplyResources(this.absencesDesStagiairesToolStripMenuItem1, "absencesDesStagiairesToolStripMenuItem1");
+            this.absencesDesStagiairesToolStripMenuItem1.Click += new System.EventHandler(this.absencesDesStagiairesToolStripMenuItem1_Click);
             // 
             // gestionIndividuToolStripMenuItem
             // 

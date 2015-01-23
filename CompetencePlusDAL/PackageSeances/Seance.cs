@@ -43,7 +43,7 @@ namespace CompetencePlus.PackageSeances
           set { heure_fin = value; }
       }
       DateTime heure_debut;
-
+    
       public DateTime Heure_debut1
       {
           get { return heure_debut; }
@@ -58,6 +58,17 @@ namespace CompetencePlus.PackageSeances
       public Seance()
       {
 
+      }
+
+      public Seance(int id, string titre, string objectif, DateTime date_seance, DateTime heurdebu, DateTime heurfin)
+      {
+          
+          this.id = id;
+          this.titre = titre;
+          this.objectif = objectif;
+          this.date_seance = date_seance;
+          this.heure_debut = heurdebu;
+          this.heure_fin = heurfin;
       }
 
     }

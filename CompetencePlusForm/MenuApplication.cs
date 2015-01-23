@@ -102,5 +102,10 @@ namespace CompetencePlus
         {
 
         }
+
+        private void absencesDesStagiairesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new PackageAbsences.formgestionabsence().Show();
+        }
     }
 }

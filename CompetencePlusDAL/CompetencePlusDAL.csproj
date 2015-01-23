@@ -56,6 +56,7 @@
     <Compile Include="PackageNotes\Note.cs" />
     <Compile Include="PackagePrevisionSeances\PrevisionSeance.cs" />
     <Compile Include="PackageSeances\Seance.cs" />
+    <Compile Include="PackageSeances\SeanceDAO.cs" />
     <Compile Include="PackageStagiaires\Stagiaire.cs" />
     <Compile Include="PackageStagiaires\StagiaireDAO.cs" />
     <Compile Include="Tools\BusinessException.cs" />
