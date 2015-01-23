@@ -22,5 +22,10 @@ namespace CompetencePlus.PackageAbsences
             codeComboBox.DataSource = new FiliereDAO().Select();
             titreComboBox.DataSource = new SeanceDAO().Select();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

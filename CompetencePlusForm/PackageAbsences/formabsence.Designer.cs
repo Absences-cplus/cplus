@@ -33,11 +33,13 @@
             System.Windows.Forms.Label titreLabel;
             System.Windows.Forms.Label codeLabel;
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.absenceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.titreComboBox = new System.Windows.Forms.ComboBox();
-            this.codeComboBox = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.codeComboBox = new System.Windows.Forms.ComboBox();
+            this.absenceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.filiereBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.titreComboBox = new System.Windows.Forms.ComboBox();
+            this.seanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.absenceDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,18 +51,43 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.absenceinfor = new System.Windows.Forms.DataGridViewImageColumn();
             this.button2 = new System.Windows.Forms.Button();
-            this.filiereBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.seanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             dateLabel = new System.Windows.Forms.Label();
             titreLabel = new System.Windows.Forms.Label();
             codeLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.absenceBindingSource)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filiereBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seanceBindingSource)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dateLabel
+            // 
+            dateLabel.AutoSize = true;
+            dateLabel.Location = new System.Drawing.Point(6, 46);
+            dateLabel.Name = "dateLabel";
+            dateLabel.Size = new System.Drawing.Size(33, 13);
+            dateLabel.TabIndex = 0;
+            dateLabel.Text = "Date:";
+            // 
+            // titreLabel
+            // 
+            titreLabel.AutoSize = true;
+            titreLabel.Location = new System.Drawing.Point(6, 73);
+            titreLabel.Name = "titreLabel";
+            titreLabel.Size = new System.Drawing.Size(44, 13);
+            titreLabel.TabIndex = 2;
+            titreLabel.Text = "Seance";
+            // 
+            // codeLabel
+            // 
+            codeLabel.AutoSize = true;
+            codeLabel.Location = new System.Drawing.Point(6, 22);
+            codeLabel.Name = "codeLabel";
+            codeLabel.Size = new System.Drawing.Size(34, 13);
+            codeLabel.TabIndex = 4;
+            codeLabel.Text = "Filiere";
             // 
             // groupBox1
             // 
@@ -78,56 +105,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Absence";
             // 
-            // absenceBindingSource
+            // button1
             // 
-            this.absenceBindingSource.DataSource = typeof(CompetencePlus.PackageAbsences.Absence);
-            // 
-            // dateLabel
-            // 
-            dateLabel.AutoSize = true;
-            dateLabel.Location = new System.Drawing.Point(6, 46);
-            dateLabel.Name = "dateLabel";
-            dateLabel.Size = new System.Drawing.Size(33, 13);
-            dateLabel.TabIndex = 0;
-            dateLabel.Text = "Date:";
-            // 
-            // dateDateTimePicker
-            // 
-            this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.absenceBindingSource, "Date", true));
-            this.dateDateTimePicker.Location = new System.Drawing.Point(58, 46);
-            this.dateDateTimePicker.Name = "dateDateTimePicker";
-            this.dateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.dateDateTimePicker.TabIndex = 1;
-            // 
-            // titreLabel
-            // 
-            titreLabel.AutoSize = true;
-            titreLabel.Location = new System.Drawing.Point(6, 73);
-            titreLabel.Name = "titreLabel";
-            titreLabel.Size = new System.Drawing.Size(44, 13);
-            titreLabel.TabIndex = 2;
-            titreLabel.Text = "Seance";
-            // 
-            // titreComboBox
-            // 
-            this.titreComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.absenceBindingSource, "Seance.Titre", true));
-            this.titreComboBox.DataSource = this.seanceBindingSource;
-            this.titreComboBox.DisplayMember = "Titre";
-            this.titreComboBox.FormattingEnabled = true;
-            this.titreComboBox.Location = new System.Drawing.Point(58, 70);
-            this.titreComboBox.Name = "titreComboBox";
-            this.titreComboBox.Size = new System.Drawing.Size(200, 21);
-            this.titreComboBox.TabIndex = 3;
-            this.titreComboBox.ValueMember = "Id";
-            // 
-            // codeLabel
-            // 
-            codeLabel.AutoSize = true;
-            codeLabel.Location = new System.Drawing.Point(6, 22);
-            codeLabel.Name = "codeLabel";
-            codeLabel.Size = new System.Drawing.Size(34, 13);
-            codeLabel.TabIndex = 4;
-            codeLabel.Text = "Filiere";
+            this.button1.Location = new System.Drawing.Point(183, 97);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Afficher";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // codeComboBox
             // 
@@ -141,14 +127,37 @@
             this.codeComboBox.TabIndex = 5;
             this.codeComboBox.ValueMember = "Id";
             // 
-            // button1
+            // absenceBindingSource
             // 
-            this.button1.Location = new System.Drawing.Point(183, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Afficher";
-            this.button1.UseVisualStyleBackColor = true;
+            this.absenceBindingSource.DataSource = typeof(CompetencePlus.PackageAbsences.Absence);
+            // 
+            // filiereBindingSource
+            // 
+            this.filiereBindingSource.DataSource = typeof(CompetencePlus.PackageFilieres.Filiere);
+            // 
+            // titreComboBox
+            // 
+            this.titreComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.absenceBindingSource, "Seance.Titre", true));
+            this.titreComboBox.DataSource = this.seanceBindingSource;
+            this.titreComboBox.DisplayMember = "Titre";
+            this.titreComboBox.FormattingEnabled = true;
+            this.titreComboBox.Location = new System.Drawing.Point(58, 70);
+            this.titreComboBox.Name = "titreComboBox";
+            this.titreComboBox.Size = new System.Drawing.Size(200, 21);
+            this.titreComboBox.TabIndex = 3;
+            this.titreComboBox.ValueMember = "Id";
+            // 
+            // seanceBindingSource
+            // 
+            this.seanceBindingSource.DataSource = typeof(CompetencePlus.PackageSeances.Seance);
+            // 
+            // dateDateTimePicker
+            // 
+            this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.absenceBindingSource, "Date", true));
+            this.dateDateTimePicker.Location = new System.Drawing.Point(58, 46);
+            this.dateDateTimePicker.Name = "dateDateTimePicker";
+            this.dateDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateDateTimePicker.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -241,14 +250,6 @@
             this.button2.Text = "Enregistrer";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // filiereBindingSource
-            // 
-            this.filiereBindingSource.DataSource = typeof(CompetencePlus.PackageFilieres.Filiere);
-            // 
-            // seanceBindingSource
-            // 
-            this.seanceBindingSource.DataSource = typeof(CompetencePlus.PackageSeances.Seance);
-            // 
             // formabsence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,10 +263,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.absenceBindingSource)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.filiereBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seanceBindingSource)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

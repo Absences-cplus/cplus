@@ -5,6 +5,7 @@ using System.Text;
 using CompetencePlus.Outils;
 using CompetencePlus.Tools;
 using System.Data.OleDb;
+using CompetencePlus.PackageStagiaires;
 namespace CompetencePlus.PackageAbsences
 {
   public  class AbsenceDAO:IGestion<Absence>
@@ -39,7 +40,7 @@ namespace CompetencePlus.PackageAbsences
             MyConnection.Close();
                 return l;
         }
-
+      
         public Absence FindById(int id)
         {
             string Requete = "select * from Absence where id=" + id + "";
