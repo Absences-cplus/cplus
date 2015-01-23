@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PackageAbsences\Absence.cs" />
+    <Compile Include="PackageAbsences\AbsenceDAO.cs" />
     <Compile Include="PackageAnneeFormations\AnneeFormation.cs" />
     <Compile Include="PackageDB\IncrementationDB.cs" />
     <Compile Include="PackageDB\IncrementDB_DAO.cs" />

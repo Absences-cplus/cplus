@@ -52,7 +52,6 @@
     <Compile Include="MenuApplication.designer.cs">
       <DependentUpon>MenuApplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="PackageAbsences\Class2.cs" />
     <Compile Include="PackageAnneeFormations\Class2.cs" />
     <Compile Include="PackageDB\FormGestionDB.cs">
       <SubType>Form</SubType>
@@ -191,6 +190,7 @@
     <None Include="Properties\DataSources\CompetencePlus.PackageDB.IncrementationDB.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageFilieres.Filiere.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageGroupes.Groupe.datasource" />
+    <None Include="Properties\DataSources\CompetencePlus.PackageStagiaires.StagiaireBAO.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -234,6 +234,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PackageAbsences\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
