@@ -99,7 +99,17 @@ namespace CompetencePlus.PackageStagiaires
 
         public Stagiaire FindById(int id)
         {
-            throw new NotImplementedException();
+            Stagiaire s = new Stagiaire();
+            string requete = "select * from Stagiaires where id=" + id + "";
+            OleDbDataReader read = MyConnection.ExecuteReader(requete);
+            while (read.Read())
+            {
+                s.Nom = read.GetString(2);
+                s.Prenom = read.GetString(3);
+                s.Id = read.GetInt32(0);
+                // s.Groupe.Filiere=new PackageFilieres.FiliereDAO().FindById(read.GetInt32(1));
+            }
+            return s;
         }
 
 

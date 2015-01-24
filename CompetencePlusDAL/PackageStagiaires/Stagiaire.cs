@@ -65,7 +65,10 @@ namespace CompetencePlus.PackageStagiaires
             get { return telephone; }
             set { telephone = value; }
         }
-
+        public override string ToString()
+        {
+            return nom + " " + prenom;
+        }
        
         private string adresse;
 

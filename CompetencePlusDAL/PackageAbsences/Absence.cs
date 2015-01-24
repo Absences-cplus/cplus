@@ -50,6 +50,10 @@ namespace CompetencePlus.PackageAbsences
           get { return cause; }
           set { cause = value; }
       }
+      public Absence(int i, Stagiaire stagiaire_id, DateTime dat, Seance seance_id, bool auto, string causee)
+      {
+          id = i; stagiaire = stagiaire_id; date = dat; seance = seance_id; autorisation = auto; cause = causee;
+      }
       public Absence()
       {
 

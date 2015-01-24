@@ -36,22 +36,27 @@
             System.Windows.Forms.Label nomLabel2;
             System.Windows.Forms.Label prenomLabel2;
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.prenomLabel1 = new System.Windows.Forms.Label();
-            this.nomLabel1 = new System.Windows.Forms.Label();
-            this.codeLabel1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.prenomLabel1 = new System.Windows.Forms.Label();
+            this.nomLabel1 = new System.Windows.Forms.Label();
+            this.codeLabel1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.stagiaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.codeComboBox = new System.Windows.Forms.ComboBox();
-            this.nomTextBox = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.prenomTextBox = new System.Windows.Forms.TextBox();
+            this.stagiaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nomTextBox = new System.Windows.Forms.TextBox();
+            this.codeComboBox = new System.Windows.Forms.ComboBox();
+            this.filiereBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.absenceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.absenceDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,12 +66,9 @@
             this.update = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.filiereBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.absenceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             prenomLabel = new System.Windows.Forms.Label();
             nomLabel = new System.Windows.Forms.Label();
             codeLabel = new System.Windows.Forms.Label();
@@ -77,11 +79,65 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stagiaireBindingSource)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.absenceBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filiereBindingSource)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.absenceBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // prenomLabel
+            // 
+            prenomLabel.AutoSize = true;
+            prenomLabel.Location = new System.Drawing.Point(124, 44);
+            prenomLabel.Name = "prenomLabel";
+            prenomLabel.Size = new System.Drawing.Size(46, 13);
+            prenomLabel.TabIndex = 11;
+            prenomLabel.Text = "Prenom:";
+            // 
+            // nomLabel
+            // 
+            nomLabel.AutoSize = true;
+            nomLabel.Location = new System.Drawing.Point(124, 21);
+            nomLabel.Name = "nomLabel";
+            nomLabel.Size = new System.Drawing.Size(32, 13);
+            nomLabel.TabIndex = 9;
+            nomLabel.Text = "Nom:";
+            // 
+            // codeLabel
+            // 
+            codeLabel.AutoSize = true;
+            codeLabel.Location = new System.Drawing.Point(124, 69);
+            codeLabel.Name = "codeLabel";
+            codeLabel.Size = new System.Drawing.Size(34, 13);
+            codeLabel.TabIndex = 7;
+            codeLabel.Text = "Filiere";
+            // 
+            // codeLabel2
+            // 
+            codeLabel2.AutoSize = true;
+            codeLabel2.Location = new System.Drawing.Point(12, 22);
+            codeLabel2.Name = "codeLabel2";
+            codeLabel2.Size = new System.Drawing.Size(34, 13);
+            codeLabel2.TabIndex = 0;
+            codeLabel2.Text = "Filiere";
+            // 
+            // nomLabel2
+            // 
+            nomLabel2.AutoSize = true;
+            nomLabel2.Location = new System.Drawing.Point(11, 49);
+            nomLabel2.Name = "nomLabel2";
+            nomLabel2.Size = new System.Drawing.Size(32, 13);
+            nomLabel2.TabIndex = 2;
+            nomLabel2.Text = "Nom:";
+            // 
+            // prenomLabel2
+            // 
+            prenomLabel2.AutoSize = true;
+            prenomLabel2.Location = new System.Drawing.Point(12, 75);
+            prenomLabel2.Name = "prenomLabel2";
+            prenomLabel2.Size = new System.Drawing.Size(46, 13);
+            prenomLabel2.TabIndex = 4;
+            prenomLabel2.Text = "Prenom:";
             // 
             // groupBox1
             // 
@@ -102,65 +158,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stagiaire";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 92);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // prenomLabel
-            // 
-            prenomLabel.AutoSize = true;
-            prenomLabel.Location = new System.Drawing.Point(124, 44);
-            prenomLabel.Name = "prenomLabel";
-            prenomLabel.Size = new System.Drawing.Size(46, 13);
-            prenomLabel.TabIndex = 11;
-            prenomLabel.Text = "Prenom:";
-            // 
-            // prenomLabel1
-            // 
-            this.prenomLabel1.Location = new System.Drawing.Point(176, 44);
-            this.prenomLabel1.Name = "prenomLabel1";
-            this.prenomLabel1.Size = new System.Drawing.Size(100, 23);
-            this.prenomLabel1.TabIndex = 12;
-            this.prenomLabel1.Text = "label1";
-            // 
-            // nomLabel
-            // 
-            nomLabel.AutoSize = true;
-            nomLabel.Location = new System.Drawing.Point(124, 21);
-            nomLabel.Name = "nomLabel";
-            nomLabel.Size = new System.Drawing.Size(32, 13);
-            nomLabel.TabIndex = 9;
-            nomLabel.Text = "Nom:";
-            // 
-            // nomLabel1
-            // 
-            this.nomLabel1.Location = new System.Drawing.Point(176, 21);
-            this.nomLabel1.Name = "nomLabel1";
-            this.nomLabel1.Size = new System.Drawing.Size(100, 23);
-            this.nomLabel1.TabIndex = 10;
-            this.nomLabel1.Text = "label1";
-            // 
-            // codeLabel
-            // 
-            codeLabel.AutoSize = true;
-            codeLabel.Location = new System.Drawing.Point(124, 69);
-            codeLabel.Name = "codeLabel";
-            codeLabel.Size = new System.Drawing.Size(34, 13);
-            codeLabel.TabIndex = 7;
-            codeLabel.Text = "Filiere";
-            // 
-            // codeLabel1
-            // 
-            this.codeLabel1.Location = new System.Drawing.Point(176, 67);
-            this.codeLabel1.Name = "codeLabel1";
-            this.codeLabel1.Size = new System.Drawing.Size(100, 23);
-            this.codeLabel1.TabIndex = 8;
-            this.codeLabel1.Text = "label1";
             // 
             // textBox2
             // 
@@ -194,6 +191,39 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Nombre des absences";
             // 
+            // prenomLabel1
+            // 
+            this.prenomLabel1.Location = new System.Drawing.Point(176, 44);
+            this.prenomLabel1.Name = "prenomLabel1";
+            this.prenomLabel1.Size = new System.Drawing.Size(100, 23);
+            this.prenomLabel1.TabIndex = 12;
+            this.prenomLabel1.Text = "label1";
+            // 
+            // nomLabel1
+            // 
+            this.nomLabel1.Location = new System.Drawing.Point(176, 21);
+            this.nomLabel1.Name = "nomLabel1";
+            this.nomLabel1.Size = new System.Drawing.Size(100, 23);
+            this.nomLabel1.TabIndex = 10;
+            this.nomLabel1.Text = "label1";
+            // 
+            // codeLabel1
+            // 
+            this.codeLabel1.Location = new System.Drawing.Point(176, 67);
+            this.codeLabel1.Name = "codeLabel1";
+            this.codeLabel1.Size = new System.Drawing.Size(100, 23);
+            this.codeLabel1.TabIndex = 8;
+            this.codeLabel1.Text = "label1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(111, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button6);
@@ -210,18 +240,34 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Rechercher";
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(145, 98);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Recherhcher";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // prenomTextBox
+            // 
+            this.prenomTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stagiaireBindingSource, "Prenom", true));
+            this.prenomTextBox.Location = new System.Drawing.Point(64, 72);
+            this.prenomTextBox.Name = "prenomTextBox";
+            this.prenomTextBox.Size = new System.Drawing.Size(156, 20);
+            this.prenomTextBox.TabIndex = 5;
+            // 
             // stagiaireBindingSource
             // 
             this.stagiaireBindingSource.DataSource = typeof(CompetencePlus.PackageStagiaires.Stagiaire);
             // 
-            // codeLabel2
+            // nomTextBox
             // 
-            codeLabel2.AutoSize = true;
-            codeLabel2.Location = new System.Drawing.Point(12, 22);
-            codeLabel2.Name = "codeLabel2";
-            codeLabel2.Size = new System.Drawing.Size(34, 13);
-            codeLabel2.TabIndex = 0;
-            codeLabel2.Text = "Filiere";
+            this.nomTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stagiaireBindingSource, "Groupe.Nom", true));
+            this.nomTextBox.Location = new System.Drawing.Point(64, 46);
+            this.nomTextBox.Name = "nomTextBox";
+            this.nomTextBox.Size = new System.Drawing.Size(156, 20);
+            this.nomTextBox.TabIndex = 3;
             // 
             // codeComboBox
             // 
@@ -235,43 +281,13 @@
             this.codeComboBox.TabIndex = 1;
             this.codeComboBox.ValueMember = "Id";
             // 
-            // nomLabel2
+            // filiereBindingSource
             // 
-            nomLabel2.AutoSize = true;
-            nomLabel2.Location = new System.Drawing.Point(11, 49);
-            nomLabel2.Name = "nomLabel2";
-            nomLabel2.Size = new System.Drawing.Size(32, 13);
-            nomLabel2.TabIndex = 2;
-            nomLabel2.Text = "Nom:";
-            // 
-            // nomTextBox
-            // 
-            this.nomTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stagiaireBindingSource, "Groupe.Nom", true));
-            this.nomTextBox.Location = new System.Drawing.Point(64, 46);
-            this.nomTextBox.Name = "nomTextBox";
-            this.nomTextBox.Size = new System.Drawing.Size(156, 20);
-            this.nomTextBox.TabIndex = 3;
-            // 
-            // prenomLabel2
-            // 
-            prenomLabel2.AutoSize = true;
-            prenomLabel2.Location = new System.Drawing.Point(12, 75);
-            prenomLabel2.Name = "prenomLabel2";
-            prenomLabel2.Size = new System.Drawing.Size(46, 13);
-            prenomLabel2.TabIndex = 4;
-            prenomLabel2.Text = "Prenom:";
-            // 
-            // prenomTextBox
-            // 
-            this.prenomTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stagiaireBindingSource, "Prenom", true));
-            this.prenomTextBox.Location = new System.Drawing.Point(64, 72);
-            this.prenomTextBox.Name = "prenomTextBox";
-            this.prenomTextBox.Size = new System.Drawing.Size(156, 20);
-            this.prenomTextBox.TabIndex = 5;
+            this.filiereBindingSource.DataSource = typeof(CompetencePlus.PackageFilieres.Filiere);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(647, 1);
+            this.button1.Location = new System.Drawing.Point(636, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -292,84 +308,6 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Liste des Absences";
-            // 
-            // absenceBindingSource
-            // 
-            this.absenceBindingSource.DataSource = typeof(CompetencePlus.PackageAbsences.Absence);
-            // 
-            // absenceDataGridView
-            // 
-            this.absenceDataGridView.AutoGenerateColumns = false;
-            this.absenceDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.absenceDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewCheckBoxColumn1,
-            this.update,
-            this.delete,
-            this.dataGridViewTextBoxColumn5});
-            this.absenceDataGridView.DataSource = this.absenceBindingSource;
-            this.absenceDataGridView.Location = new System.Drawing.Point(6, 19);
-            this.absenceDataGridView.Name = "absenceDataGridView";
-            this.absenceDataGridView.Size = new System.Drawing.Size(444, 250);
-            this.absenceDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Stagiaire";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Stagiaire";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Date";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Seance";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Seance";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Autorisation";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Autorisation";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Visible = false;
-            // 
-            // update
-            // 
-            this.update.FillWeight = 50F;
-            this.update.HeaderText = "";
-            this.update.Image = global::CompetencePlus.Properties.Resources.Update;
-            this.update.Name = "update";
-            this.update.Width = 50;
-            // 
-            // delete
-            // 
-            this.delete.FillWeight = 50F;
-            this.delete.HeaderText = "";
-            this.delete.Image = global::CompetencePlus.Properties.Resources.Delete;
-            this.delete.Name = "delete";
-            this.delete.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Cause";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Cause";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Visible = false;
             // 
             // button5
             // 
@@ -411,24 +349,114 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button6
+            // absenceDataGridView
             // 
-            this.button6.Location = new System.Drawing.Point(145, 98);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Recherhcher";
-            this.button6.UseVisualStyleBackColor = true;
+            this.absenceDataGridView.AutoGenerateColumns = false;
+            this.absenceDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.absenceDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewCheckBoxColumn1,
+            this.update,
+            this.delete,
+            this.dataGridViewTextBoxColumn5});
+            this.absenceDataGridView.DataSource = this.absenceBindingSource;
+            this.absenceDataGridView.Location = new System.Drawing.Point(6, 19);
+            this.absenceDataGridView.Name = "absenceDataGridView";
+            this.absenceDataGridView.Size = new System.Drawing.Size(444, 250);
+            this.absenceDataGridView.TabIndex = 0;
+            this.absenceDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.absenceDataGridView_CellContentClick);
             // 
-            // filiereBindingSource
+            // dataGridViewTextBoxColumn1
             // 
-            this.filiereBindingSource.DataSource = typeof(CompetencePlus.PackageFilieres.Filiere);
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Stagiaire";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Stagiaire";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Date";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Date";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Seance";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Seance";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Autorisation";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Autorisation";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Visible = false;
+            // 
+            // update
+            // 
+            this.update.FillWeight = 50F;
+            this.update.HeaderText = "";
+            this.update.Image = global::CompetencePlus.Properties.Resources.Update;
+            this.update.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.update.Name = "update";
+            this.update.Width = 50;
+            // 
+            // delete
+            // 
+            this.delete.FillWeight = 50F;
+            this.delete.HeaderText = "";
+            this.delete.Image = global::CompetencePlus.Properties.Resources.Delete;
+            this.delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.delete.Name = "delete";
+            this.delete.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Cause";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Cause";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // absenceBindingSource
+            // 
+            this.absenceBindingSource.DataSource = typeof(CompetencePlus.PackageAbsences.Absence);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(546, 1);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(84, 23);
+            this.button7.TabIndex = 4;
+            this.button7.Text = "Info Absence ";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(446, 1);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(94, 23);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "Cause Absence";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // formgestionabsence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 345);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
@@ -442,10 +470,10 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stagiaireBindingSource)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.absenceBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.filiereBindingSource)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.absenceBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -474,6 +502,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView absenceDataGridView;
+        private System.Windows.Forms.BindingSource absenceBindingSource;
+        private System.Windows.Forms.BindingSource filiereBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -482,7 +512,7 @@
         private System.Windows.Forms.DataGridViewImageColumn update;
         private System.Windows.Forms.DataGridViewImageColumn delete;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.BindingSource absenceBindingSource;
-        private System.Windows.Forms.BindingSource filiereBindingSource;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }

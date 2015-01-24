@@ -40,7 +40,15 @@ namespace CompetencePlus.PackageSeances
 
         public Seance FindById(int id)
         {
-            throw new NotImplementedException();
+            Seance s = new Seance();
+            string requete = "select * from Seance where id=" + id + "";
+            OleDbDataReader read = MyConnection.ExecuteReader(requete);
+            while (read.Read())
+            {
+                s.Id = id;
+                s.Titre = read.GetString(1);
+            }
+            return s;
         }
     }
 }

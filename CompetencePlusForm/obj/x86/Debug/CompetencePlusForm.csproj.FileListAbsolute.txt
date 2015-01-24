@@ -151,3 +151,6 @@ C:\Users\Acer\Documents\GitHub\cplus\CompetencePlusForm\obj\x86\Debug\Competence
 C:\Users\Acer\Documents\GitHub\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlusForm.pdb
 C:\Users\Acer\Documents\GitHub\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlus.PackageAbsences.formgestionabsence.resources
 C:\Users\Acer\Documents\GitHub\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlus.PackageAbsences.formabsence.resources
+C:\Users\Acer\Documents\GitHub\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlus.PackageAbsences.formcauseabsence.resources
+C:\Users\Acer\Documents\GitHub\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlus.PackageAbsences.formaffichageabsence.resources
+C:\Users\Acer\Documents\GitHub\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlus.PackageAbsences.formupdateabsence.resources

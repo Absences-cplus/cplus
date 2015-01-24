@@ -59,6 +59,10 @@ namespace CompetencePlus.PackageSeances
       {
 
       }
+      public override string ToString()
+      {
+          return titre;
+      }
 
       public Seance(int id, string titre, string objectif, DateTime date_seance, DateTime heurdebu, DateTime heurfin)
       {

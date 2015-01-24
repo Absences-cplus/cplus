@@ -41,16 +41,16 @@
             this.seanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.absenceDataGridView = new System.Windows.Forms.DataGridView();
+            this.stagiaireDataGridView = new System.Windows.Forms.DataGridView();
+            this.stagiaireBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Absencee = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.absenceinfor = new System.Windows.Forms.DataGridViewImageColumn();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Absence = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Autorisation = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.cause = new System.Windows.Forms.DataGridViewButtonColumn();
             dateLabel = new System.Windows.Forms.Label();
             titreLabel = new System.Windows.Forms.Label();
             codeLabel = new System.Windows.Forms.Label();
@@ -59,7 +59,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.filiereBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seanceBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stagiaireDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stagiaireBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dateLabel
@@ -161,100 +162,97 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.absenceDataGridView);
+            this.groupBox2.Controls.Add(this.stagiaireDataGridView);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Location = new System.Drawing.Point(276, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(408, 367);
+            this.groupBox2.Size = new System.Drawing.Size(461, 324);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Liste";
             // 
-            // absenceDataGridView
+            // stagiaireDataGridView
             // 
-            this.absenceDataGridView.AutoGenerateColumns = false;
-            this.absenceDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.absenceDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.stagiaireDataGridView.AutoGenerateColumns = false;
+            this.stagiaireDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.stagiaireDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
+            this.Email,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.Absencee,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewTextBoxColumn5,
-            this.absenceinfor});
-            this.absenceDataGridView.DataSource = this.absenceBindingSource;
-            this.absenceDataGridView.Location = new System.Drawing.Point(6, 20);
-            this.absenceDataGridView.Name = "absenceDataGridView";
-            this.absenceDataGridView.Size = new System.Drawing.Size(393, 312);
-            this.absenceDataGridView.TabIndex = 1;
+            this.Absence,
+            this.Autorisation,
+            this.cause});
+            this.stagiaireDataGridView.DataSource = this.stagiaireBindingSource;
+            this.stagiaireDataGridView.Location = new System.Drawing.Point(6, 19);
+            this.stagiaireDataGridView.Name = "stagiaireDataGridView";
+            this.stagiaireDataGridView.Size = new System.Drawing.Size(444, 266);
+            this.stagiaireDataGridView.TabIndex = 2;
+            this.stagiaireDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stagiaireDataGridView_CellClick);
+            this.stagiaireDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stagiaireDataGridView_CellContentClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // stagiaireBindingSource
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Stagiaire";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Stagiaire";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Date";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // Absencee
-            // 
-            this.Absencee.DataPropertyName = "Stagiaire";
-            this.Absencee.HeaderText = "Absencee";
-            this.Absencee.Name = "Absencee";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Seance";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Seance";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Autorisation";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Autorisation";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Cause";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Cause";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Visible = false;
-            // 
-            // absenceinfor
-            // 
-            this.absenceinfor.HeaderText = "";
-            this.absenceinfor.Name = "absenceinfor";
-            this.absenceinfor.Width = 50;
+            this.stagiaireBindingSource.DataSource = typeof(CompetencePlus.PackageStagiaires.Stagiaire);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(327, 338);
+            this.button2.Location = new System.Drawing.Point(375, 291);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Enregistrer";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nom";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Prenom";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Prenom";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // Absence
+            // 
+            this.Absence.HeaderText = "Absence";
+            this.Absence.Name = "Absence";
+            // 
+            // Autorisation
+            // 
+            this.Autorisation.HeaderText = "Autorisation";
+            this.Autorisation.Name = "Autorisation";
+            // 
+            // cause
+            // 
+            this.cause.HeaderText = "cause";
+            this.cause.Name = "cause";
+            this.cause.Visible = false;
+            this.cause.Width = 50;
             // 
             // formabsence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 372);
+            this.ClientSize = new System.Drawing.Size(740, 331);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "formabsence";
@@ -266,7 +264,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.filiereBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seanceBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.absenceDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stagiaireDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stagiaireBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -280,17 +279,17 @@
         private System.Windows.Forms.ComboBox titreComboBox;
         private System.Windows.Forms.DateTimePicker dateDateTimePicker;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView absenceDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Absencee;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewImageColumn absenceinfor;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.BindingSource filiereBindingSource;
         private System.Windows.Forms.BindingSource seanceBindingSource;
+        private System.Windows.Forms.BindingSource stagiaireBindingSource;
+        private System.Windows.Forms.DataGridView stagiaireDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Absence;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Autorisation;
+        private System.Windows.Forms.DataGridViewButtonColumn cause;
     }
 }

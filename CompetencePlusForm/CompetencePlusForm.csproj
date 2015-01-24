@@ -58,11 +58,29 @@
     <Compile Include="PackageAbsences\formabsence.Designer.cs">
       <DependentUpon>formabsence.cs</DependentUpon>
     </Compile>
+    <Compile Include="PackageAbsences\formaffichageabsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageAbsences\formaffichageabsence.Designer.cs">
+      <DependentUpon>formaffichageabsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageAbsences\formcauseabsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageAbsences\formcauseabsence.Designer.cs">
+      <DependentUpon>formcauseabsence.cs</DependentUpon>
+    </Compile>
     <Compile Include="PackageAbsences\formgestionabsence.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PackageAbsences\formgestionabsence.Designer.cs">
       <DependentUpon>formgestionabsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageAbsences\formupdateabsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageAbsences\formupdateabsence.Designer.cs">
+      <DependentUpon>formupdateabsence.cs</DependentUpon>
     </Compile>
     <Compile Include="PackageAnneeFormations\Class2.cs" />
     <Compile Include="PackageDB\FormGestionDB.cs">
@@ -156,8 +174,17 @@
     <EmbeddedResource Include="PackageAbsences\formabsence.resx">
       <DependentUpon>formabsence.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PackageAbsences\formaffichageabsence.resx">
+      <DependentUpon>formaffichageabsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageAbsences\formcauseabsence.resx">
+      <DependentUpon>formcauseabsence.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PackageAbsences\formgestionabsence.resx">
       <DependentUpon>formgestionabsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageAbsences\formupdateabsence.resx">
+      <DependentUpon>formupdateabsence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PackageDB\FormGestionDB.resx">
       <DependentUpon>FormGestionDB.cs</DependentUpon>
