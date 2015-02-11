@@ -61,7 +61,7 @@ namespace CompetencePlus.PackageAbsences
                 s.Id = read.GetInt32(0);
                 s.Titre = read.GetString(1);
                 s.Date_seance = read.GetDateTime(3).Date;
-                s.Heure_debut = read.GetDateTime(4);
+                s.Heure_debut = read.GetString(4);
                 l.Add(s);
             }
             return l;

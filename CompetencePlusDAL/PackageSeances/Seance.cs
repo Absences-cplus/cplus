@@ -28,6 +28,14 @@ namespace CompetencePlus.PackageSeances
             get { return objectif; }
             set { objectif = value; }
         }
+        string code;
+
+        public string Code
+        {
+            get { return code; }
+            set { code = value; }
+        }
+        
         DateTime date_seance;
 
         public DateTime Date_seance
@@ -35,22 +43,16 @@ namespace CompetencePlus.PackageSeances
             get { return date_seance; }
             set { date_seance = value; }
         }
-      DateTime heure_fin;
+      string heure_fin;
 
-      public DateTime Heure_fin
+      public string Heure_fin
       {
           get { return heure_fin; }
           set { heure_fin = value; }
       }
-      DateTime heure_debut;
+      string heure_debut;
     
-      public DateTime Heure_debut1
-      {
-          get { return heure_debut; }
-          set { heure_debut = value; }
-      }
-
-      public DateTime Heure_debut
+      public string Heure_debut
       {
           get { return heure_debut; }
           set { heure_debut = value; }
@@ -64,7 +66,7 @@ namespace CompetencePlus.PackageSeances
           return titre;
       }
 
-      public Seance(int id, string titre, string objectif, DateTime date_seance, DateTime heurdebu, DateTime heurfin)
+      public Seance(int id, string titre, string objectif, DateTime date_seance, string heurdebu, string heurfin,string c)
       {
           
           this.id = id;
@@ -73,6 +75,7 @@ namespace CompetencePlus.PackageSeances
           this.date_seance = date_seance;
           this.heure_debut = heurdebu;
           this.heure_fin = heurfin;
+          this.code = c;
       }
 
     }

@@ -107,5 +107,10 @@ namespace CompetencePlus
         {
             new PackageAbsences.formgestionabsence().Show();
         }
+
+        private void séancesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new PackageSeances.formgestionseance().Show();
+        }
     }
 }

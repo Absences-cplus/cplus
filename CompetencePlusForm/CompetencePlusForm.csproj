@@ -132,7 +132,24 @@
     <Compile Include="PackageModules\Class2.cs" />
     <Compile Include="PackageNotes\Class2.cs" />
     <Compile Include="PackagePrevisionSeances\Class2.cs" />
-    <Compile Include="PackageSeances\Class2.cs" />
+    <Compile Include="PackageSeances\formgestionseance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageSeances\formgestionseance.Designer.cs">
+      <DependentUpon>formgestionseance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageSeances\formseance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageSeances\formseance.Designer.cs">
+      <DependentUpon>formseance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageSeances\formupdateseance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageSeances\formupdateseance.Designer.cs">
+      <DependentUpon>formupdateseance.cs</DependentUpon>
+    </Compile>
     <Compile Include="PackageStagiaires\FormGestionInscription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +223,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PackageGroupes\FormUpdateGroupe.resx">
       <DependentUpon>FormUpdateGroupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageSeances\formgestionseance.resx">
+      <DependentUpon>formgestionseance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageSeances\formseance.resx">
+      <DependentUpon>formseance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageSeances\formupdateseance.resx">
+      <DependentUpon>formupdateseance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PackageStagiaires\FormGestionInscription.resx">
       <DependentUpon>FormGestionInscription.cs</DependentUpon>

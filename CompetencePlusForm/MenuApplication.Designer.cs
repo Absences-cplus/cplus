@@ -95,6 +95,7 @@
             // 
             this.séancesToolStripMenuItem2.Name = "séancesToolStripMenuItem2";
             resources.ApplyResources(this.séancesToolStripMenuItem2, "séancesToolStripMenuItem2");
+            this.séancesToolStripMenuItem2.Click += new System.EventHandler(this.séancesToolStripMenuItem2_Click);
             // 
             // séquencesToolStripMenuItem
             // 
